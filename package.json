@@ -4,7 +4,7 @@
     "description": "Extensions generally useful for most development",
     "version": "1.0.0",
     "publisher": "dakara",
-    "icon": "core-pack.svg",
+    "icon": "core-pack-icon.svg",
     "repository": {
         "type": "git",
         "url": "https://github.com/dakaraphi/vscode-extension-pack-core"
