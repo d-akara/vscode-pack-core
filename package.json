@@ -1,0 +1,59 @@
+{
+    "name": "dakara-editor-core-pack",
+    "displayName": "Dakara Editor Core Pack",
+    "description": "Extensions generally useful for most development",
+    "version": "1.0.0",
+    "publisher": "dakara",
+    "icon": "core-pack.svg",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dakaraphi/vscode-extension-pack-core"
+    },
+    "engines": {
+        "vscode": "^0.10.0"
+    },
+    "categories": [
+        "Extension Packs"
+    ],
+    "extensionDependencies": [ 
+        "CoenraadS.bracket-pair-colorizer", 
+        "dakara.dakara-foldplus", 
+        "DotJoshJohnson.xml", 
+        "IBM.output-colorizer", 
+        "KnisterPeter.vscode-github", 
+        "RoscoP.ActiveFileInStatusBar", 
+        "SirTobi.code-clip-ring", 
+        "albert.TabOut", 
+        "alefragnani.Bookmarks", 
+        "annsk.alignment", 
+        "bibhasdn.git-easy", 
+        "bibhasdn.unique-lines", 
+        "christian-kohler.path-intellisense", 
+        "dakara.theme-dakara", 
+        "donjayamanne.githistory", 
+        "eamodio.gitlens", 
+        "emilast.LogFileHighlighter", 
+        "formulahendry.auto-close-tag", 
+        "formulahendry.auto-rename-tag", 
+        "formulahendry.code-runner", 
+        "hoovercj.vscode-settings-cycler", 
+        "humao.rest-client", 
+        "jamesls.jmespath-vscode", 
+        "kaiwood.indentation-level-movement", 
+        "lucax88x.codeacejumper", 
+        "mkloubert.vs-script-commands", 
+        "naumovs.color-highlight", 
+        "octref.vscode-json-transform", 
+        "pprice.better-merge", 
+        "qub.qub-xml", 
+        "richie5um2.vscode-statusbar-json-path", 
+        "rsbondi.highlight-words", 
+        "ryu1kn.annotator", 
+        "ryu1kn.edit-with-shell", 
+        "ryu1kn.partial-diff", 
+        "searKing.preview-vscode", 
+        "siegebell.incremental-search", 
+        "taiki.quick-filter", 
+        "wwm.better-align"
+    ]
+}
