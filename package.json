@@ -2,9 +2,9 @@
     "name": "dakara-editor-core-pack",
     "displayName": "Dakara Editor Core Pack",
     "description": "Extensions generally useful for most development",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "publisher": "dakara",
-    "icon": "core-pack-icon.svg",
+    "icon": "core-pack-icon.png",
     "repository": {
         "type": "git",
         "url": "https://github.com/dakaraphi/vscode-extension-pack-core"
