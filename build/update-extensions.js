@@ -17,12 +17,16 @@ packages.forEach(package => {
 updatePackageJSON(packages);
 
 function makeMarkDownLink(package) {
-    return '- [' + package.displayName + '](' + MARKETPLACE_URL + package.publisher + '.' + package.name + ') ' + package.description;
+    return '- [' + package.displayName + '](' + MARKETPLACE_URL + makeExtensionID(package) + ') ' + package.description;
 }
 
 // update our extension list with current extensions
 function updatePackageJSON(packages) {
-    bundlePackage.extensionDependencies = packages.map(package => package.publisher + '.' + package.name)
+    bundlePackage.extensionDependencies = packages.map(package => makeExtensionID(package))
                                                   .sort((a,b) => a.localeCompare(b))
     fs.write('../package.json', bundlePackage)
+}
+
+function makeExtensionID(package) {
+    return package.publisher + '.' + package.name
 }
