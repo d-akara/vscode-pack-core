@@ -2,7 +2,7 @@
   "name": "dakara-editor-core-pack",
   "displayName": "Dakara Editor Core Pack",
   "description": "Extensions generally useful for most development",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "publisher": "dakara",
   "icon": "core-pack-icon.png",
   "repository": {
