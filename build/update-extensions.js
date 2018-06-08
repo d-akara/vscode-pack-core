@@ -18,7 +18,7 @@ updatePackageJSON(packages);
 
 // Log out lines for README
 function makeMarkDownLink(package) {
-    return '- [' + package.displayName + '](' + 'https://marketplace.visualstudio.com/items?itemName=' + package.name + ') ' + package.description;
+    return '- [' + package.displayName + '](' + 'https://marketplace.visualstudio.com/items?itemName=' + package.publisher + '.' + package.name + ') ' + package.description;
 }
 
 // update our extension list with current extensions
