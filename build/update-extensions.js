@@ -6,8 +6,14 @@ const EXTENSIONS_PATH = os.homedir() + '/.vscode/extensions'
 const MARKETPLACE_URL = 'https://marketplace.visualstudio.com/items?itemName='
 
 const packages = fs.find(EXTENSIONS_PATH, {matching: '!.*', directories: true, recursive: false}) // All first level directories that don't start with '.'
-                    .map(packagePath => JSON.parse(fs.read(packagePath + '/package.json')))       // All package files as package JSON objects
-                    .sort((a,b) => a.displayName.localeCompare(b.displayName))                    // Sort all packages by name
+                    .map(packagePath => packagePath + '/package.json')
+                    .filter(jsonPath => fs.exists(jsonPath))                               // discard any missing packages.
+                    .map(jsonPath => JSON.parse(fs.read(jsonPath)))                        // All package files as package JSON objects
+                    .sort((a,b) => {                                                       // Sort all packages by display name or name
+                        const nameA = a.displayName || a.name
+                        const nameB = b.displayName || b.name
+                        return nameA.localeCompare(nameB)
+                    })
 
 packages.forEach(package => {
     // Log out lines to insert in README
@@ -17,7 +23,8 @@ packages.forEach(package => {
 updatePackageJSON(packages);
 
 function makeMarkDownLink(package) {
-    return '- [' + package.displayName + '](' + MARKETPLACE_URL + makeExtensionID(package) + ') ' + package.description;
+    const name = package.displayName || package.name
+    return '- [' + name + '](' + MARKETPLACE_URL + makeExtensionID(package) + ') ' + package.description;
 }
 
 // update our extension list with current extensions

@@ -2,12 +2,12 @@
   "name": "dakara-editor-core-pack",
   "displayName": "Dakara Editor Core Pack",
   "description": "Extensions generally useful for most development",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "publisher": "dakara",
   "icon": "core-pack-icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dakaraphi/vscode-extension-pack-core"
+    "url": "https://github.com/dakaraphi/vscode-pack-core"
   },
   "engines": {
     "vscode": "^1.24.0"
@@ -30,7 +30,6 @@
     "dakara.theme-dakara",
     "dakara.transformer",
     "dbaeumer.vscode-eslint",
-    "donjayamanne.githistory",
     "DotJoshJohnson.xml",
     "eamodio.gitlens",
     "emilast.LogFileHighlighter",
@@ -40,21 +39,18 @@
     "HookyQR.beautify",
     "hoovercj.vscode-settings-cycler",
     "humao.rest-client",
-    "IBM.output-colorizer",
     "jamesls.jmespath-vscode",
-    "jrieken.references-plusplus",
-    "mkloubert.vs-script-commands",
-    "mousetraps.quicksnippet",
+    "mhutchie.git-graph",
     "ms-devlabs.extension-manifest-editor",
+    "ms-vscode.Go",
     "ms-vscode.typescript-javascript-grammar",
     "naumovs.color-highlight",
-    "nikitaKunevich.snippet-creator",
     "octref.vetur",
     "octref.vscode-json-transform",
+    "patrys.vscode-code-outline",
     "pflannery.vscode-versionlens",
     "pranaygp.vscode-css-peek",
     "qub.qub-xml",
-    "quicktype.quicktype",
     "redhat.java",
     "ritwickdey.LiveServer",
     "RoscoP.ActiveFileInStatusBar",
@@ -65,6 +61,7 @@
     "siegebell.incremental-search",
     "SirTobi.code-clip-ring",
     "steoates.autoimport",
+    "usernamehw.errorlens",
     "WallabyJs.quokka-vscode",
     "wwm.better-align"
   ]
